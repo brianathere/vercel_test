@@ -4,7 +4,7 @@ import { ERC721ABI } from "../util/ERC271Abi";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 type Balance = {
-  result: bigint;
+  result: string;
   contract: string;
 };
 
@@ -17,9 +17,10 @@ export const getServerSideProps: GetServerSideProps<{
     publicClient,
   });
 
-  const result = await contract.read.balanceOf([
+  const value = await contract.read.balanceOf([
     "0xC17114b14505367799484d908ad5513D33d97F99",
   ]);
+  const result = value.toString() + "n";
   console.log(result);
   return {
     props: {
