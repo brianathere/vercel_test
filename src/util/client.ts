@@ -3,5 +3,5 @@ import { mainnet } from "viem/chains";
 
 export const publicClient = createPublicClient({
   chain: mainnet,
-  transport: webSocket(),
+  transport: webSocket("wss://eth-mainnet.ws.alchemyapi.io/ws/demo"),
 });
