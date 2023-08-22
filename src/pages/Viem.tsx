@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { publicClient } from "./client";
 import { getContract } from "viem";
 import { ERC721ABI } from "./ERC271Abi";
@@ -32,7 +31,7 @@ export const getServerSideProps: GetServerSideProps<{
   };
 };
 
-export default function Home(
+export default function Viem(
   balance: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
   return (
