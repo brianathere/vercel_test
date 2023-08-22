@@ -1,6 +1,6 @@
-import { publicClient } from "./client";
+import { publicClient } from "../util/client";
 import { getContract } from "viem";
-import { ERC721ABI } from "./ERC271Abi";
+import { ERC721ABI } from "../util/ERC271Abi";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 type Balance = {
