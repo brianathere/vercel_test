@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps<{
     "0xC17114b14505367799484d908ad5513D33d97F99",
   ]);
   const result = value.toString() + "n";
-  console.log(result);
+  console.log(`result: ${result}`);
   return {
     props: {
       balance: {
