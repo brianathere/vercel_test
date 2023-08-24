@@ -1,5 +1,5 @@
 import { publicClient } from "../util/client";
-import { getContract } from "viem";
+import { getContract } from "../viem/cjs/";
 import { ERC721ABI } from "../util/ERC271Abi";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
